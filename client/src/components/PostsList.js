@@ -7,7 +7,7 @@ const PostsList = () => {
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    fetch('http://localhost:3001/api/posts') // local fetch for now
+    fetch('https://forum-proxy.freecodecamp.rocks/latest') // local fetch for now
       .then((response) => {
         if (!response.ok) {
           throw new Error('Network response was not ok');
