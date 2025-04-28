@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/Forum-Homepage-fCC/static/css/main.b2b3267f.css",
-    "main.js": "/Forum-Homepage-fCC/static/js/main.c60c743f.js",
+    "main.js": "/Forum-Homepage-fCC/static/js/main.62659d3f.js",
     "static/js/453.419a5d54.chunk.js": "/Forum-Homepage-fCC/static/js/453.419a5d54.chunk.js",
     "index.html": "/Forum-Homepage-fCC/index.html",
     "main.b2b3267f.css.map": "/Forum-Homepage-fCC/static/css/main.b2b3267f.css.map",
-    "main.c60c743f.js.map": "/Forum-Homepage-fCC/static/js/main.c60c743f.js.map",
+    "main.62659d3f.js.map": "/Forum-Homepage-fCC/static/js/main.62659d3f.js.map",
     "453.419a5d54.chunk.js.map": "/Forum-Homepage-fCC/static/js/453.419a5d54.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.b2b3267f.css",
-    "static/js/main.c60c743f.js"
+    "static/js/main.62659d3f.js"
   ]
 }
