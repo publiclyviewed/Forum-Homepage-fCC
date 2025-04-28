@@ -12,8 +12,8 @@ const proxyURL = "https://forum-proxy.freecodecamp.rocks/";
 app.get('/api/posts', async (req, res) => {
     try {
         const response = await axios.get(`${proxyURL}latest`);
-        console.log(response.data); // Log the response here
-        res.json(response.data); // Send the data back to the frontend
+        console.log(response.data); 
+        res.json(response.data); 
     } catch (error) {
         console.error(error);
         res.status(500).send('Error fetching posts');

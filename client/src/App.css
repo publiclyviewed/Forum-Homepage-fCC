@@ -1,29 +1,29 @@
-/* Reset base app styles */
+
 .App {
   font-family: 'Arial', sans-serif;
-  background-color: #222222; /* Dark background for the Xbox feel */
+  background-color: #222222;
   min-height: 100vh;
   padding: 20px;
-  color: #e1e1e1; /* Light text color */
+  color: #e1e1e1; 
 }
 
-/* App header */
+
 .App-header {
   text-align: center;
   margin-bottom: 40px;
 }
 
-/* App header with glowing title */
+
 .App-header h1 {
   font-size: 3rem;
-  color: #00b140; /* Xbox green color */
+  color: #00b140; 
   font-family: 'Segoe UI', sans-serif;
   font-weight: bold;
   text-shadow: 0 0 10px #00b140, 0 0 20px #00b140, 0 0 30px #00b140; /* Glow effect */
 }
 
 
-/* Posts container */
+
 .posts-container {
   display: flex;
   flex-direction: column;
@@ -31,6 +31,7 @@
   max-width: 800px;
   margin: 0 auto;
 }
+
 
 /* Individual post card */
 .post-card {
@@ -48,27 +49,27 @@
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
 }
 
-/* Post title */
+
 .post-title {
   font-size: 1.5rem;
   margin-bottom: 10px;
-  color: #00b140; /* Xbox green */
-  position: relative; /* Ensure position is relative for stacking context */
-  z-index: 2; /* Ensure title is above other elements */
+  color: #00b140; 
+  position: relative; 
+  z-index: 2; 
 }
 
 .post-title a {
-  color: #00b140; /* Xbox green for link color */
+  color: #00b140; 
   text-decoration: none;
-  z-index: 2; /* Ensure the link is above other elements */
-  pointer-events: auto; /* Ensure the link is clickable */
+  z-index: 2; 
+  pointer-events: auto;
 }
 
 .post-title a:hover {
   text-decoration: underline;
 }
 
-/* Poster avatars */
+
 .post-posters {
   display: flex;
   gap: 15px;
@@ -85,7 +86,7 @@
   border-radius: 50%;
   width: 50px;
   height: 50px;
-  border: 2px solid #00b140; /* Green border around avatar */
+  border: 2px solid #00b140; 
 }
 
 .poster-info span {
@@ -97,7 +98,7 @@
 }
 
 .poster-info span:hover {
-  color: #00b140; /* Change color on hover */
+  color: #00b140; 
 }
 
 /* Post meta information */
