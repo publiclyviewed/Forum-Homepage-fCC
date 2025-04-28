@@ -1,0 +1,124 @@
+/* Reset base app styles */
+.App {
+  font-family: 'Arial', sans-serif;
+  background-color: #222222; /* Dark background for the Xbox feel */
+  min-height: 100vh;
+  padding: 20px;
+  color: #e1e1e1; /* Light text color */
+}
+
+/* App header */
+.App-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+/* App header with glowing title */
+.App-header h1 {
+  font-size: 3rem;
+  color: #00b140; /* Xbox green color */
+  font-family: 'Segoe UI', sans-serif;
+  font-weight: bold;
+  text-shadow: 0 0 10px #00b140, 0 0 20px #00b140, 0 0 30px #00b140; /* Glow effect */
+}
+
+
+/* Posts container */
+.posts-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Individual post card */
+.post-card {
+  background: #333; /* Darker card background */
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s, box-shadow 0.2s;
+  border: 1px solid #444;
+  position: relative; /* Ensure z-index works on child elements */
+}
+
+.post-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Post title */
+.post-title {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #00b140; /* Xbox green */
+  position: relative; /* Ensure position is relative for stacking context */
+  z-index: 2; /* Ensure title is above other elements */
+}
+
+.post-title a {
+  color: #00b140; /* Xbox green for link color */
+  text-decoration: none;
+  z-index: 2; /* Ensure the link is above other elements */
+  pointer-events: auto; /* Ensure the link is clickable */
+}
+
+.post-title a:hover {
+  text-decoration: underline;
+}
+
+/* Poster avatars */
+.post-posters {
+  display: flex;
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.poster-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.poster-info img {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  border: 2px solid #00b140; /* Green border around avatar */
+}
+
+.poster-info span {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #e1e1e1;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.poster-info span:hover {
+  color: #00b140; /* Change color on hover */
+}
+
+/* Post meta information */
+.post-meta {
+  font-size: 0.9rem;
+  color: #aaa;
+  margin-top: 10px;
+}
+
+.post-meta span {
+  margin-right: 15px;
+  display: inline-block;
+}
+
+/* Responsive tweaks */
+@media (max-width: 600px) {
+  .post-card {
+    padding: 15px;
+  }
+
+  .post-title {
+    font-size: 1.2rem;
+  }
+}
